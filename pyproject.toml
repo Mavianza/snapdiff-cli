@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snapdiff-cli"
+version = "1.0.0"
+description = "CLI pemantau perubahan folder berbasis snapshot SHA-256"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Mavianza"}]
+dependencies = []
+
+[project.scripts]
+snapdiff = "snapdiff.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["snapdiff*"]
